@@ -1,303 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Saad - Resume</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background-color: #f3f4f6;
-            color: #1f2937;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        /* Header Section */
-        .header {
-            background: #3d8bd9;
-            color: white;
-            padding: 40px;
-            border-radius: 8px 8px 0 0;
-        }
-
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            font-size: 0.9rem;
-        }
-
-        .contact-info div {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        /* Main Content */
-        .content {
-            padding: 40px;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section:last-child {
-            margin-bottom: 0;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            color: #3d8bd9;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* Experience Items */
-        .experience-item {
-            margin-bottom: 30px;
-        }
-
-        .experience-header {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-
-        .company-name {
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-
-        .date {
-            color: #6b7280;
-        }
-
-        .role {
-            font-weight: 500;
-            margin-bottom: 10px;
-        }
-
-        .description {
-            color: #4b5563;
-            margin-bottom: 10px;
-        }
-
-        .achievements {
-            list-style: none;
-        }
-
-        .achievements li {
-            margin-bottom: 8px;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .achievements li::before {
-            content: "•";
-            color: #3d8bd9;
-            position: absolute;
-            left: 0;
-        }
-
-        /* Skills and Interests */
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .tag {
-            background: #e5e7eb;
-            padding: 6px 12px;
-            border-radius: 15px;
-            font-size: 0.9rem;
-        }
-
-        .tag.blue {
-            background: #dbeafe;
-            color: #1e40af;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                margin: 20px;
-            }
-
-            .header {
-                padding: 30px;
-            }
-
-            .content {
-                padding: 30px;
-            }
-
-            .experience-header {
-                flex-direction: column;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Saad | Portfolio</n  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: #fafafa;
+      line-height: 1.6;
+    }
+    header {
+      background: #63052C;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 10px 0;
+    }
+    nav li {
+      margin: 0 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #63052C;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #F4A825;
+    }
+    .container {
+      width: 80%;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    section h2 {
+      color: #63052C;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      border-bottom: 2px solid #F4A825;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .timeline, .projects-list {
+      list-style: none;
+      padding: 0;
+    }
+    .timeline li, .projects-list li {
+      margin-bottom: 20px;
+    }
+    .timeline .role {
+      font-weight: bold;
+      color: #63052C;
+    }
+    .timeline .date {
+      font-style: italic;
+      color: #666;
+    }
+    .projects-list li {
+      padding: 10px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    .projects-list .project-title {
+      font-weight: bold;
+      color: #63052C;
+      margin-bottom: 5px;
+    }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+    }
+    .skills-list li {
+      background: #F4A825;
+      color: #111;
+      padding: 8px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 0.9em;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+    }
+    footer a {
+      color: #63052C;
+      margin: 0 10px;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <h1>Muhammad Saad</h1>
-            <div class="contact-info">
-                <div>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    Saadk4423@gmail.com
-                </div>
-                <div>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
-                    Islamabad, PK
-                </div>
-                <div>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                    LinkedIn
-                </div>
-            </div>
-        </header>
-
-        <!-- Main Content -->
-        <main class="content">
-             <!-- Skills -->
-            <section class="section">
-                <h2 class="section-title">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    Skills
-                </h2>
-                <div class="tags">
-                    <span class="tag blue">Product Management</span>
-                    <span class="tag blue">Strategic Planning</span>
-                    <span class="tag blue">Product Development</span>
-                    <span class="tag blue">API Integrations</span>
-                    <span class="tag blue">Solutions Analysis</span>
-                    <span class="tag blue">Market Research</span>
-                    <span class="tag blue">Software Development</span>
-                    <span class="tag blue">Product Roadmapping</span>
-                </div>
-            </section>
-            <!-- Work Experience -->
-            <section class="section">
-                <h2 class="section-title">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                    </svg>
-                    Work Experience
-                </h2>
-
-                <!-- OneKode -->
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-name">OneKode</div>
-                        <div class="date">Jun. 2024 – Present</div>
-                    </div>
-                    <div class="role">Advisory Partner, Product & Solutions </div>
-                    <p class="description">OneKode is a SaaS company specializing in no-code development, enabling rapid product creation while reducing startup costs.</p>
-                    <ul class="achievements">
-                        <li>Led cross-functional teams, driving the end-to-end product lifecycle from ideation to launch while optimizing development efficiency.</li>
-                        <li>Developed clear and actionable technical documentation, improving collaboration across engineering, design, and business teams.</li>
-                        <li>Key Results: $100K+ in sales; 2 returning customers; improved customer satisfaction.</li>
-                    </ul>
-                </div>
-
-                <!-- Remoto -->
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-name">Remoto</div>
-                        <div class="date">Jan. 2023 – Present</div>
-                    </div>
-                    <div class="role">VP Product</div>
-                    <p class="description">Remotoco is a technology company focused on remote work solutions, helping professionals collaborate efficiently.</p>
-                    <ul class="achievements">
-                        <li>Led a comprehensive overhaul of the Remotoco product, driving its complete revamp.</li>
-                        <li>Key Results: $80K raised in pre-seed; partnered with Deel; 1000+ registered users on the platform.</li>
-                    </ul>
-                </div>
-
-                <!-- Previous Roles -->
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div class="company-name">Previous Roles</div>
-                    </div>
-                    <ul class="achievements">
-                        <li>Founder & Full Stack Developer at Internabad (Aug. 2022 – Dec. 2022)</li>
-                        <li>Founder & Lead Developer at GeoContacts (Feb. 2021 – July. 2022) - 1000+ downloads, 5-star rating</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Education -->
-            <section class="section">
-                <h2 class="section-title">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                    </svg>
-                    Education
-                </h2>
-                <div class="experience-item">
-                    <div class="company-name">FAST NUCES</div>
-                    <div class="role">Bachelors of Science in Computer Sciences</div>
-                    <div class="date">2020 • Islamabad, PK</div>
-                </div>
-            </section>
-
-           
-
-            <!-- Interests -->
-            <section class="section">
-                <h2 class="section-title">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                    </svg>
-                    Interests
-                </h2>
-                <div class="tags">
-                    <span class="tag">Weightlifting</span>
-                    <span class="tag">Entrepreneurship</span>
-                    <span class="tag">Cricket</span>
-                    <span class="tag">Traveling</span>
-                    <span class="tag">F.R.I.E.N.D.S</span>
-                </div>
-            </section>
-        </main>
-    </div>
+  <header>
+    <h1>Muhammad Saad</h1>
+    <p>Product Specialist & Technical Innovator</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a product leader with 5+ years of experience turning ideas into scalable digital products. My background spans startups and enterprise SaaS, specializing in AI-driven solutions, no-code platforms, and eCommerce. I excel at bridging business needs with technical execution to drive impact.</p>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <span class="role">Head of Products &amp; Solutions (Fractional) – OneKode</span><br>
+          <span class="date">Aug 2024 – Present</span>
+          <p>Leading a team of analysts and PMs to deliver no-code SaaS solutions for enterprise clients, contributing to $250K+ in revenue and 5+ successful implementations.</p>
+        </li>
+        <li>
+          <span class="role">Product &amp; Growth Consultant – Remoto</span><br>
+          <span class="date">Aug 2024 – Mar 2025</span>
+          <p>Advised on product strategy, pitch decks, and fundraising, helping secure investor interest and refine go-to-market plans.</p>
+        </li>
+        <li>
+          <span class="role">Product Owner – Remoto</span><br>
+          <span class="date">Oct 2023 – Jul 2024</span>
+          <p>Led a full platform revamp, defined the roadmap, and collaborated cross-functionally to drive feature delivery and user growth to 1,000+ registrations.</p>
+        </li>
+        <li>
+          <span class="role">Head of Engineering &amp; Product Lead – Remoto</span><br>
+          <span class="date">Jan 2023 – Sep 2023</span>
+          <p>Architected and maintained a React/MERN web application, mentored junior developers, and optimized development workflows.</p>
+        </li>
+        <li>
+          <span class="role">Founder &amp; Full-Stack Developer – Internabad</span><br>
+          <span class="date">Aug 2022 – Dec 2022</span>
+          <p>Built and launched a job-matching web app using React.js and Node.js, applying lean methodologies for iterative releases.</p>
+        </li>
+        <li>
+          <span class="role">Technical Product Owner – GeoContacts</span><br>
+          <span class="date">Feb 2021 – Jul 2022</span>
+          <p>Conceptualized, developed, and launched an Android address book with geolocation, achieving 1,000+ downloads &amp; a 5-star rating.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="projects-list">
+        <li>
+          <div class="project-title">Isharay</div>
+          <p>An Android app using motion detection and machine learning to translate sign language ↔ English via 3D visualizations.</p>
+        </li>
+        <li>
+          <div class="project-title">SmileCam</div>
+          <p>An Android camera app leveraging face detection &amp; smile recognition to auto-capture moments.</p>
+        </li>
+        <li>
+          <div class="project-title">Shreddit</div>
+          <p>A secure data shredding app with robust encryption &amp; algorithms, achieving 1M+ downloads for data privacy.</p>
+        </li>
+        <li>
+          <div class="project-title">TimeBack Wastemeter (v1 Planning)</div>
+          <p>Designed the visual feedback system for a Mac/Windows app that detects student productivity anti-patterns in real time.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Product Strategy</li>
+        <li>Agile &amp; Scrum</li>
+        <li>GenAI Integration</li>
+        <li>No-Code Platforms</li>
+        <li>MERN Stack</li>
+        <li>Machine Learning</li>
+        <li>Geolocation</li>
+        <li>UX/UI Design</li>
+        <li>JIRA &amp; Confluence</li>
+        <li>Data Analysis (SQL, Excel)</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: your.email@example.com</p>
+      <p>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Muhammad Saad
+  </footer>
 </body>
 </html>
